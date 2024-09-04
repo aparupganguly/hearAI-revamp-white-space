@@ -1,6 +1,11 @@
 body {
   /* margin: 0.5em 5em 0.5em 5em; */
   margin: 0 auto;
+  overflow-x: hidden;
+
+  ::selection {
+    user-select: none;
+  }
 }
 
 .topContainer {
@@ -8,4 +13,20 @@ body {
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   padding: 0.5em 5em 0.5em 5em;
+}
+
+/* fonts */
+@font-face {
+  font-family: "ngp-55";
+  src: url("./assets/hero/fonts/ngp/NeueHaasDisplayRoman.ttf")
+    format("opentype");
+}
+@font-face {
+  font-family: "ngp-65";
+  src: url("./assets/hero/fonts/ngp/NeueHaasDisplayMediu.ttf")
+    format("opentype");
+}
+@font-face {
+  font-family: "ngp-75";
+  src: url("./assets/hero/fonts/ngp/NeueHaasDisplayBold.ttf") format("opentype");
 }

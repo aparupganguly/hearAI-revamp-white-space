@@ -3,17 +3,28 @@
 }
 .heroTextContainer {
   font-size: 5em;
+  color: #fff;
+  line-height: 1;
+  font-family: "ngp-75";
 }
-.topHeroText {
-  background: linear-gradient(90deg, #ffffff 35%, #d2d457 57%, #00ff853d 100%);
+.heroHealthWord {
+  background: linear-gradient(
+    90deg,
+    #d2d457 0%,
+    rgba(0, 255, 133, 0.24) 102.8%
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 0.1em;
 }
 .heroTextContainer :nth-child(2) {
   background: linear-gradient(90deg, #ffffff 0%, #999999 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 5em;
+  position: relative;
+  left: 3em;
+  z-index: 1000;
 }
 .heroAiWord {
   background: linear-gradient(90deg, #527be5 39%, #ff5050 100%);
@@ -23,4 +34,16 @@
 .harnessText {
   font-size: 1em;
   color: #eeeeee;
+  position: absolute;
+  right: 5em;
+  max-width: 12%;
+  font-family: "ngp-55";
+}
+.topHeroText {
+  margin-right: 1em;
+}
+.heroHuman {
+  position: absolute;
+  width: 30em;
+  top: 20em;
 }

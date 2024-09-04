@@ -3,18 +3,26 @@
   justify-content: space-between;
   align-items: center;
   height: 20vh;
-
+  font-family: "ngp-55";
 }
-.navText{
-    color: #999999;
+.navText {
+  color: #999999;
 }
 .logo {
   width: 100px;
-  height: 40px; 
+  height: 40px;
 }
 .navLinks {
   display: flex;
   flex-direction: column;
   line-height: 0;
   color: #aaaaaa;
+}
+.navbarContainer button {
+  background: transparent;
+  color: #aaaaaa;
+  border: 2px solid #aaaaaa;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
 }
