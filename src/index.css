@@ -8,7 +8,7 @@ body {
 /* scroll bar */
 
 .topContainer {
-  /* background-image: url("./assets/hero/heroBg.png"); */
+  background-image: url("./assets/hero/heroBg.png");
   background-size: 100vw 110vh;
   background-repeat: no-repeat;
 }
@@ -27,4 +27,8 @@ body {
 @font-face {
   font-family: "ngp-75";
   src: url("./assets/hero/fonts/ngp/NeueHaasDisplayBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "rr";
+  src: url("./assets/hero/fonts/ngp/rr.otf") format("opentype");
 }
