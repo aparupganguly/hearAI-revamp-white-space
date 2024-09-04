@@ -250,3 +250,8 @@
       position: static;
     }
   }
+
+  .faqHeader{
+    font-family: "ngp-75";
+    font-size: 4em;
+  }

@@ -1,49 +1,91 @@
-.heroContainer {
-  height: 80vh;
-}
-.heroTextContainer {
-  font-size: 5em;
-  color: #fff;
-  line-height: 1;
-  font-family: "ngp-75";
-}
-.heroHealthWord {
-  background: linear-gradient(
-    90deg,
-    #d2d457 0%,
-    rgba(0, 255, 133, 0.24) 102.8%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 0.1em;
-}
-.heroTextContainer :nth-child(2) {
-  background: linear-gradient(90deg, #ffffff 0%, #999999 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+
+.hero {
   position: relative;
-  left: 3em;
-  z-index: 1000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #194d33;
 }
-.heroAiWord {
-  background: linear-gradient(90deg, #527be5 39%, #ff5050 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 }
-.harnessText {
-  font-size: 1em;
-  color: #eeeeee;
-  position: absolute;
-  right: 5em;
-  max-width: 12%;
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
   font-family: "ngp-55";
 }
-.topHeroText {
-  margin-right: 1em;
+
+.hero-content h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.7;
+  font-family: "ngp-55";
 }
-.heroHuman {
+
+.hero-content h1 span {
+  display: inline-block;
+}
+
+.separator {
+  width: 100px; /* Adjust for visual width */
+  height: 2px; /* Thin horizontal line */
+  background-color: rgba(253, 253, 253, 0.3);
+  transform-origin: left; /* Animation starts from the left */
+  margin: 0 1rem; /* Adds space between the text columns */
+}
+
+.hero-image {
   position: absolute;
-  width: 30em;
-  top: 20em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Three horizontal rows */
+  grid-template-columns: 1fr; /* Single column (horizontal reveal) */
+  z-index: 1;
+  overflow: hidden; /* Hide overflow for smooth animation */
+}
+
+.image-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/hero/img.png"); /* Single background image */
+  background-size: cover; /* Ensure the background image covers the cell */
+  background-position: center;
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.image-cell::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Inherit background from parent */
+  background-size: cover;
+  background-position: center;
 }

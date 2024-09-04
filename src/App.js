@@ -12,26 +12,26 @@ import { gsap } from "gsap";
 
 
 const App = () => {
-  useEffect(() => {
-    ScrollTrigger.create({
-      trigger: "#section2",
-      start: "top top",
-      end: "bottom top",
+  // useEffect(() => {
+  //   ScrollTrigger.create({
+  //     trigger: "#section2",
+  //     start: "top top",
+  //     end: "bottom top",
 
-      onEnter: () =>
-        gsap.to("body", { backgroundColor: "#fff", duration: 1 }),
-      onLeave: () =>
-        gsap.to("body", { backgroundColor: "#111", duration: 1 }),
-      onLeaveBack: () =>
-        gsap.to("body", { backgroundColor: "#111", duration: 1 }),
-      onEnterBack: () =>
-        gsap.to("body", { backgroundColor: "#fff", duration: 1 }),
-    });
+  //     onEnter: () =>
+  //       gsap.to("body", { backgroundColor: "#fff", duration: 1 }),
+  //     onLeave: () =>
+  //       gsap.to("body", { backgroundColor: "#000", duration: 1 }),
+  //     onLeaveBack: () =>
+  //       gsap.to("body", { backgroundColor: "#000", duration: 1 }),
+  //     onEnterBack: () =>
+  //       gsap.to("body", { backgroundColor: "#fff", duration: 1 }),
+  //   });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
 
 
   const lenis = useLenis(({ scroll }) => { });
