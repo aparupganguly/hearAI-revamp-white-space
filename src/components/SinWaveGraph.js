@@ -37,7 +37,7 @@ const SineWaveGraph = () => {
             },
         });
 
-        tl.to(curve, { strokeDashoffset: 0, duration: 2, ease: "power1.inOut" }).to(
+        tl.to(curve, { strokeDashoffset: 0, duration: 1.1, ease: "power1.inOut" }).to(
             texts,
             { opacity: 1, y: 0, stagger: 0.2 },
             0.5,
@@ -48,7 +48,7 @@ const SineWaveGraph = () => {
             duration: 2,
             yoyo: true,
             repeat: -1,
-            ease: "none",
+            ease: "power4.inOut",
             opacity: 0.8,
             stagger: 0.1,
         });

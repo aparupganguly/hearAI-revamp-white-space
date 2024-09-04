@@ -48,7 +48,7 @@ const Faq = () => {
       <div className="section">
         <div className="section_header">
           <div className="section_header_list">
-            <div className="section_header_list_item">FAQ</div>
+            <div className="faqHeader">FAQ</div>
           </div>
         </div>
 

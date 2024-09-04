@@ -1,0 +1,53 @@
+.TestiContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.TestiPanel {
+  min-width: 100vw; /* Ensure each panel takes full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Needed for the blurred background */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.TestiPanel::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  filter: blur(15px); /* Blur effect */
+  z-index: -1; /* Place it behind the image */
+}
+
+.TestiPanel img {
+  max-width: 100%; /* Ensure the image fits within the panel */
+  height: auto; /* Maintain aspect ratio */
+  position: relative; /* Positioning context for img */
+  z-index: 1; /* Bring the image in front of the blur */
+}
+
+.TestiImage {
+  width: 45%;
+  height: auto;
+  padding-top: 2em;
+}
+
+.testiHeader {
+  font-family: "ngp-75";
+  font-size: 4em;
+  position: relative;
+}
+.testiLine {
+  position: absolute;
+  height: 25em;
+  top: 10em;
+  padding-left: 5em;
+}
