@@ -48,7 +48,7 @@ const Faq = () => {
       <div className="section">
         <div className="section_header">
           <div className="section_header_list">
-            <div className="faqHeader">FAQ</div>
+            <div className="faqHeader">Frequently Asked Questions</div>
           </div>
         </div>
 
@@ -70,8 +70,7 @@ const Faq = () => {
                 <span className="span">{column.title}</span>
                 {activeColumn === index && (
                   <p className="caption_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus in augue
-                    luctus venenatis.
+                    HeAR AI is a groundbreaking artificial intelligence technology developed by Google that can analyze health-related sounds, such as coughs and breathing patterns, to detect early signs of disease.
                   </p>
                 )}
               </div>
