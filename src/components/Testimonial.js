@@ -3,6 +3,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/Testimonial.css";
 import Card1 from "../assets/Testi/card1.png";
+import Card2 from "../assets/Testi/card2.png";
+import Card3 from "../assets/Testi/card3.png";
+import Card4 from "../assets/Testi/card4.png";
 import line from "../assets/Testi/line.png";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,7 +13,7 @@ const Testimonial = () => {
   const containerRef = useRef(null);
   const sectionsRef = useRef([]);
 
-  const images = [Card1, Card1, Card1, Card1];
+  const images = [Card1, Card2, Card3, Card4];
 
   useEffect(() => {
     const sections = gsap.utils.toArray(sectionsRef.current);
