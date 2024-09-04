@@ -19,11 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="navbarContainer">
-<<<<<<< HEAD
-      <img src={logo} alt="" className="logo" />
-=======
       <img src={logo} alt="Logo" className="logo" />
->>>>>>> 8e5ed206cf4cb4e6d98c60dbe616901fe7b9f617
       <p className="navText">Transforming Sound into Health Insights</p>
       <div className="navLinks">
         <p>Mechanism</p>
@@ -31,13 +27,9 @@ const Navbar = () => {
         <p>Testimonials</p>
       </div>
       <div className="rightButtonContainer">
-<<<<<<< HEAD
-        <button className="navButton">Discover Now</button>
-=======
         <button className="navButton" ref={navButtonRef}>
           <span>Discover Now</span>
         </button>
->>>>>>> 8e5ed206cf4cb4e6d98c60dbe616901fe7b9f617
         <div className="btnLine"></div>
       </div>
     </div>
