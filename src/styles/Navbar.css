@@ -3,28 +3,40 @@
   justify-content: space-between;
   align-items: center;
   height: 20vh;
-  font-family: "ngp-55";
+  font-family: "ngp-65";
   padding-left: 5em;
   padding-right: 5em;
-
 }
+
 .navText {
   color: #999999;
 }
+
 .logo {
-  height: 20px;
+  height: 30px;
 }
+
 .navLinks {
+  height: 100px;
   display: flex;
   flex-direction: column;
   line-height: 0;
+  gap: -10px;
   color: #aaaaaa;
 }
-.navbarContainer button {
+
+.navbarContainer .navButton {
   background: transparent;
   color: #aaaaaa;
   border: 2px solid #aaaaaa;
   border-radius: 100px;
   padding: 10px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbarContainer .navButton span {
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
