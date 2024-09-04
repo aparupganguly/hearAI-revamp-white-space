@@ -3,16 +3,18 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 
-  ::selection {
-    user-select: none;
-  }
 }
+
+/* scroll bar */
+/* scroll bar */
 
 .topContainer {
   background-image: url("./assets/hero/heroBg.png");
-  background-size: 100vw 120vh;
+  background-size: 100vw 110vh;
   background-repeat: no-repeat;
-  padding: 0.5em 5em 0.5em 5em;
+  padding-left : 5em;
+  padding-right : 5em;
+
 }
 
 /* fonts */
