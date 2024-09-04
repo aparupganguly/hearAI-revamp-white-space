@@ -6,10 +6,11 @@ import Testimonial from "./components/Testimonial";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Working from "./components/Working";
+import CustomCursor from "./components/CustomCursor";
+import "./styles/CustomCursor.css";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
-
 
 const App = () => {
   // useEffect(() => {
@@ -33,13 +34,13 @@ const App = () => {
   //   };
   // }, []);
 
-
-  const lenis = useLenis(({ scroll }) => { });
+  const lenis = useLenis(({ scroll }) => {});
   return (
     <>
       <ReactLenis root>
+        <CustomCursor />
 
-        <div className='topContainer'>
+        <div className="topContainer">
           <Navbar />
           <Hero />
         </div>
@@ -50,7 +51,6 @@ const App = () => {
         <Faq />
         <Footer />
       </ReactLenis>
-
     </>
   );
 };
