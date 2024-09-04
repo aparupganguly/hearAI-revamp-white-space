@@ -5,8 +5,10 @@ import Hero from "./components/Hero";
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className='topContainer'>
+        <Navbar />
+        <Hero />
+      </div>
     </>
   );
 };

@@ -1,0 +1,20 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+
+}
+.navText{
+    color: #999999;
+}
+.logo {
+  width: 100px;
+  height: 40px; 
+}
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  color: #aaaaaa;
+}

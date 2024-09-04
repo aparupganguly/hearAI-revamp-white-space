@@ -1,0 +1,26 @@
+.heroContainer {
+  height: 80vh;
+}
+.heroTextContainer {
+  font-size: 5em;
+}
+.topHeroText {
+  background: linear-gradient(90deg, #ffffff 35%, #d2d457 57%, #00ff853d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heroTextContainer :nth-child(2) {
+  background: linear-gradient(90deg, #ffffff 0%, #999999 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 5em;
+}
+.heroAiWord {
+  background: linear-gradient(90deg, #527be5 39%, #ff5050 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.harnessText {
+  font-size: 1em;
+  color: #eeeeee;
+}
