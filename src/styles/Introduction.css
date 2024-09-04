@@ -1,37 +1,43 @@
-#line1, #line2{
-    font-size: 4rem;
-    padding: 0;
-    line-height: 0;
+#line1,
+#line2 {
+  font-size: 4rem;
+  padding: 0;
+  line-height: 0;
 }
 
-#line2{
-    margin-left: 12rem;
+#line2 {
+  margin-left: 12rem;
 }
 
-.introductionMainContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.introductionMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.introContent1, .introContent2, .introContent3{
-    display: flex;
-    justify-content: space-around;
-    align-items: self-end;
-    gap: 3rem;
-    margin-bottom: 2rem;
+.introContent1,
+.introContent2,
+.introContent3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: self-end;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
 }
 
-.introLine{
-    width: 0.8rem;
-    margin-right: 5rem;
+.introLine {
+  width: 0.8rem;
+  margin-right: 5rem;
 }
 
-.introImage{
-    width: 18rem;
+.introImage {
+  width: 18rem;
+  background-color: #fff;
+
 }
 
-/* .introContent2{
+/* .introContent2{  
     display: none;
 }
 
