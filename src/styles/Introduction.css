@@ -27,12 +27,24 @@
   justify-content: space-around;
   align-items: self-end;
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 .intro1,
 .intro2,
 .intro3 {
   font-family: "ngp-65";
+  width: 250px;
+  text-align: right;
+}
+
+.intro1, .intro3{
+  margin-right: -100px;
+}
+
+
+.intro2{
+  text-align: left !important;
+  margin-left: -100px;
 }
 .introLine {
   width: 0.8rem;
@@ -60,4 +72,16 @@
 
 .introContent h1 {
   font-family: "ngp-75";
+}
+
+.green{
+  color: #3B9844;;
+}
+
+.yellow{
+  color:#FBBC04;;
+}
+
+.red{
+  color: #EA4335;;
 }

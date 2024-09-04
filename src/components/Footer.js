@@ -1,67 +1,80 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/Footer.css";
 import HeAR_AI from "../assets/footer/HeAR_AI.png";
 import line from "../assets/introduction/line.png";
-import facebook from "../assets/footer/facebook.png";
-import instagram from "../assets/footer/instagram.png";
-import twitter from "../assets/footer/twitter.png";
-import linkedin from "../assets/footer/linkedin.png";
-import arrow from "../assets/footer/arrow.png";
+import gsap from "gsap";
+
 const Footer = () => {
+  const socialBtnsRef = useRef([]);
+
+  useEffect(() => {
+    socialBtnsRef.current.forEach((item) => {
+      let span = item.querySelector("span");
+      let tl = gsap.timeline({ paused: true });
+
+      tl.to(span, { duration: 0.2, yPercent: -150, ease: "power2.in" });
+      tl.set(span, { yPercent: 150 });
+      tl.to(span, { duration: 0.2, yPercent: 0 });
+
+      item.addEventListener("mouseenter", () => tl.play(0));
+    });
+  }, []);
+
   return (
-    <>
-      <div className="footerContainer">
-        <div className="footerLogo">
-          <img src={HeAR_AI} className="footerLogo"></img>
+    <div className="footerContainer">
+      <div className="footerLogo">
+        <img src={HeAR_AI} className="footerLogo" alt="HeAR AI" />
+      </div>
+      <div className="footerLine">
+        <img src={line} alt="Line" />
+      </div>
+      <div className="quickLinks">
+        <div className="quickLinkContainer">
+          <p>About Us</p>
         </div>
-        <div className="footerLine">
-          <img src={line}></img>
+        <div className="quickLinkContainer">
+          <p>Contact Us</p>
         </div>
-        <div className="quickLinks">
-          <div className="quickLinkContainer">
-            <img src={arrow} className="arrowImg"></img>
-            <p>About Us</p>
-          </div>
-          <div className="quickLinkContainer">
-            <img src={arrow} className="arrowImg"></img>
-            <p>Contact Us</p>
-          </div>
-          <div className="quickLinkContainer">
-            <img src={arrow} className="arrowImg"></img>
-            <p>FAQ</p>
-          </div>
-          <div className="quickLinkContainer">
-            <img src={arrow} className="arrowImg"></img>
-            <p>Privacy Policy</p>
-          </div>
-          <div className="quickLinkContainer">
-            <img src={arrow} className="arrowImg"></img>
-            <p>Support</p>
-          </div>
+        <div className="quickLinkContainer">
+          <p>FAQ</p>
         </div>
-        <div className="footerLine">
-          <img src={line}></img>
+        <div className="quickLinkContainer">
+          <p>Privacy Policy</p>
         </div>
-        <div className="socials">
-          <div className="socialMainBtn">
-            <img src={facebook} className="socialImg"></img>
-            <button className="socialBtn">Facebook</button>
-          </div>
-          <div className="socialMainBtn">
-            <img src={instagram} className="socialImg"></img>
-            <button className="socialBtn">Instagram</button>
-          </div>
-          <div className="socialMainBtn">
-            <img src={twitter} className="socialImg"></img>
-            <button className="socialBtn">Twitter</button>
-          </div>
-          <div className="socialMainBtn">
-            <img src={linkedin} className="socialImg"></img>
-            <button className="socialBtn">LinkedIn</button>
-          </div>
+        <div className="quickLinkContainer">
+          <p>Support</p>
         </div>
       </div>
-    </>
+      <div className="footerLine">
+        <img src={line} alt="Line" />
+      </div>
+      <div className="socials">
+        <div
+          className="socialMainBtn"
+          ref={(el) => socialBtnsRef.current.push(el)}
+        >
+          <button className="socialBtn"><span>Facebook</span></button>
+        </div>
+        <div
+          className="socialMainBtn"
+          ref={(el) => socialBtnsRef.current.push(el)}
+        >
+          <button className="socialBtn"><span>Instagram</span></button>
+        </div>
+        <div
+          className="socialMainBtn"
+          ref={(el) => socialBtnsRef.current.push(el)}
+        >
+          <button className="socialBtn"><span>Twitter</span></button>
+        </div>
+        <div
+          className="socialMainBtn"
+          ref={(el) => socialBtnsRef.current.push(el)}
+        >
+          <button className="socialBtn"><span>LinkedIn</span></button>
+        </div>
+      </div>
+    </div>
   );
 };
 

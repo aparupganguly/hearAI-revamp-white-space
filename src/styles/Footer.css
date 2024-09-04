@@ -28,7 +28,7 @@
 .socialMainBtn {
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center content */
     width: 7rem;
     border-radius: 2rem;
     font-family: "ngp-65";
@@ -36,26 +36,21 @@
     border: 0.2px solid black;
     position: relative;
     cursor: pointer; 
-}
-
-.socialImg {
-    width: 18px;
-    display: none; 
-    transition: opacity 0.3s ease;
-}
-
-.socialMainBtn:hover .socialImg {
-    display: block; 
+    overflow: hidden;
 }
 
 .socialBtn {
     border: none;
     background-color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 0; /* Adjust padding as needed */
+    font-family: "ngp-65";
 }
 
-.arrowImg {
-    display: none;
-    transition: opacity 0.3s ease;
+.socialBtn span {
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
 .quickLinkContainer {
