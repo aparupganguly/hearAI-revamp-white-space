@@ -1,0 +1,83 @@
+.footerContainer {
+    margin-top: 3rem;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerLogo {
+    width: 40rem;
+}
+
+.footerLine img {
+    width: 0.5rem;
+}
+
+.quickLinks {
+    font-family: "ngp-65";
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialMainBtn {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 7rem;
+    border-radius: 2rem;
+    font-family: "ngp-65";
+    background-color: white;
+    border: 0.2px solid black;
+    position: relative;
+    cursor: pointer; 
+}
+
+.socialImg {
+    width: 18px;
+    display: none; 
+    transition: opacity 0.3s ease;
+}
+
+.socialMainBtn:hover .socialImg {
+    display: block; 
+}
+
+.socialBtn {
+    border: none;
+    background-color: white;
+}
+
+.arrowImg {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.quickLinkContainer {
+    display: flex;
+    gap: 9px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.quickLinkContainer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.quickLinkContainer:hover::after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}

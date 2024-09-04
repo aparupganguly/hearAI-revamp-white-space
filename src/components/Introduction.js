@@ -19,8 +19,8 @@ const Introduction = () => {
         <div className='introContent1'>
           <img className='introLine' src={line}></img>
           <p className='intro1'>
-            An innovative AI platform that analyzes bioacoustic data (like
-            coughs and breathing) to detect and monitor health conditions,
+            An innovative AI platform that analyzes <span>bioacoustic data (like
+                coughs and breathing)</span>to detect and monitor health conditions,
             offering a non-invasive, intuitive approach to healthcare.
           </p>
           <img className='introImage' src={image1}></img>
