@@ -1,0 +1,40 @@
+#line1, #line2{
+    font-size: 4rem;
+    padding: 0;
+    line-height: 0;
+}
+
+#line2{
+    margin-left: 12rem;
+}
+
+.introductionMainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.introContent1, .introContent2, .introContent3{
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.introLine{
+    width: 0.8rem;
+    margin-right: 5rem;
+}
+
+.introImage{
+    width: 18rem;
+}
+
+/* .introContent2{
+    display: none;
+}
+
+.introContent3{
+    display: none;
+} */
