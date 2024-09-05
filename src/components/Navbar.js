@@ -28,7 +28,7 @@ const Navbar = () => {
       </div>
       <div className="rightButtonContainer">
         <button className="navButton" ref={navButtonRef}>
-          <span>Discover Now</span>
+          <span>Experience Now</span>
         </button>
         <div className="btnLine"></div>
       </div>
